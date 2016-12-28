@@ -1,0 +1,7 @@
+#  SOURCE this file to create the virtual environment
+
+virtualenv venv
+. venv/bin/activate
+pip install NumPy
+pip install SciPy
+pip install -U scikit-learn
