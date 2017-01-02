@@ -1,10 +1,15 @@
 #!/bin/bash
 
-# Run the system-wide python with is installed as a "framework" instead
-#  of the "non-framework" install in this venv.
+# Run the system-wide python which is installed as a "framework" install
+#   instead of the "non-framework" install in this venv.
 # We need a framework install to get matplotlib to work
-# (keep fingers crossed)
-# Install in venv/bin
+# Install this script in venv/bin, and (typically) name it: frameworkpython
+# Then you can run "frameworkpython x.py y z" instead of  "python x.py y z"
+#
+# See:
+# http://stackoverflow.com/questions/21784641/installation-issue-with-matplotlib-python
+# http://matplotlib.org/faq/usage_faq.html#what-is-a-backend
+# http://matplotlib.org/faq/virtualenv_faq.html
 
 # what real Python executable to use
 PYVER=2.7
